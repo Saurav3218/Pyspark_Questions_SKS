@@ -1,0 +1,172 @@
+****************HCL Interview Questions*********************
+
+Spark -
+
+1. How do you define spark context ?
+2. How do you define a rdd from textFile?
+3. What is spark lineage in rdd?
+4. How does Spark Job execution begin and end ?
+5. What are driver nodes and their significance?
+6. What is coalesce transformation ?
+7. write a pyspark program to read a csv file, join and write back to parquet file format.
+8. How will you distribute your jar on the worker nodes?
+9. Can 1 spark session have multiple spark context, if yes, define the config settings.
+10. what's static and dynamic allocation in spark? 
+
+Hive 
+1. Different modes of hive
+2. Hive variables
+3. When is map reduce mode used ?
+4. Write ddl for hive external partitioned and bucketed table.
+
+Sqoop
+1. How to import big objects through sqoop
+2. What is codec?
+
+
+Sqoop - default db in sqoop
+hive - what database does hive supports?
+
+*******************2nd Round Interview HCL **********************
+
+1. How to merge 2 dictionaries ?
+ dict1= {a:1,b:2} , dict2 ={c:3,d:4}
+
+2. How to compare data types and column names of two dataframes in pyspark?
+
+3. python function to check palindrome without using any function
+
+4. Why is spark lazily evaluated and what happens behind the scene?
+
+5. Suppose a job fails every 3rd week of month, how shall we debug the same?
+
+6. Write dataframe query for below 2 dfs where we want 3rd highest salary and employee name and dept name.
+
+emp
+empid empname sal add
+dept
+deptid deptname empid
+
+7. How to broadcast an element in pyspark?
+
+8. Difference between broadcast and persist at memory level.
+
+9. Difference between full outer join and cross join.
+
+10. Is the minus operator there in the hive?
+
+11. how to get those records which are only present in table A and not in table B in hive?
+
+12. Suppose you are broadcasting a list, how many copies will there be made in the node?
+
+**********************Jio Interview Questions*************************
+
+1. Sqoop Jobs optimization
+2. ORC is not suitable for incremental loads in sqoop while importing to hive, how would you do it the other way?
+3. why moved from hive to spark, tez vs spark.
+4. write a program to make 121 secs as 2 min 1 sec, any programming language.
+5. Broadcast Join is not suitable for full outer join, tell me the reason?
+6. order by vs distribute by vs sort by vs cluster by
+7. which is faster order by vs cluster by
+8.write a sql query for
+input - 
+
+enmae from_month  to_month Salary
+Sid         January'21   June'21   20000
+
+Sid Jan 20000
+Sid  Feb 20000
+Sid March 20000
+..........
+Sid June 20000
+
+or via dataframe
+
+
+
+*************************AXIS BANK 1st Round ************************
+Sqoop -
+1. How to import records without special characters from the oracle table?
+2. Default number of mappers and now suppose 1000 mappers are configured for my cluster. How many mappers now?
+3. how to import logs generated for each second into a hive table when no p.k is specified and no timestamp column is there?
+4. What will happen if we don't use split-by sqoop?
+5. How would you write a sqoop job for any hive import ?
+
+Hive -
+1. What is the use case of hive internal and external tables?
+2. how to handle skew join scenarios?
+3. Can an external table without specifying location be created and if dropped files will be deleted or not?
+4. If we delete one partition directory, will the table be accessible and in case of full table scan what would happen?
+5. In a bank there are 1000s of employees logging cases at each hour, I want to find out the most cases registered by the employee at 3pm. What could be my partitioning and bucketing column?
+6. suppose we want to delete 100s of external table files now each at different different directories, how can we achieve this with script?
+7. how to enforce querying on full table.
+8. how to ensure metadata is not dropped even after executing drop table on internal table?
+
+Spark -
+1. optimization techniques
+2. how to come up with memory configs for any cluster.
+3. what do when 100 GB needs to be cached in memory
+4. How does shuffle hash join work?
+5. how to reduce network shuffling and which join to use.
+6. how can we clean up intermediary files created in shuffling.
+
+
+
+***********************BCG Interivew Questions *********************8
+Python
+
+1. What is a shallow and deep copy?
+2. What would be output for xs and ys?
+
+xs = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+ys = list(xs)  
+xs.append(['new sublist'])
+
+3. WAP for below output.
+l =[a,b,c]
+output => [(0,'a'),(1,'b'),(2,'c')]
+
+4. Put this is in two list without using any inbuilt function : str = "Siddharth Sinha"
+5. Output of this code
+str1 = "Siddharth Sinha"
+str1[2:7]=“hello”
+
+6. print only even indices characters in name str1 = "Siddharth Sinha"
+7. Count  how many times  string s2 repeated  
+s1=“aaijoijdoipowiwppqoiowedijowabalkjoijwiojwabaabaabaopiowiwabaabaaababaabaiiaba”
+s2=“aba"
+
+8. "# what is the output
+class Abc:
+    class_var = 10
+   
+    def __init__(self, val):
+        self.val = val
+       
+    def multiply(self):
+        value = self.val * Abc.class_var
+abc = Abc(10)
+print(abc.multiply())
+
+
+Hadoop -
+
+1. What is the architecture of HDFS?
+2. Suppose namenode fails what would happen in such a case?
+3. How are files subdivided in block size?
+4. How are mappers decided in cases of join?
+5. How does backup happen in HDFs namenode?
+
+Spark -
+1. Optimization techniques
+2. How is spark fault tolerant?
+3. What is the difference between rdd , dataframe and dataset?
+4. How are the number of stages decided?
+5. DF query to join, filter, add another column by dividing one column with 70 and writing back to parquet file format.
+
+SQL -
+1. how to find organizations working in all service sectors?
+2. sql query to find the records left exclusive?
+
+
+
