@@ -1,0 +1,34 @@
+********Databricks Interview Questions******
+
+1. Autoloader and how does it do incremental loading?
+2. what is liquid clustering and how its better than zorder?
+3. scd type 2 merge command
+4. how do you implement cdc?
+5. on prem to azure cloud migration -- explain steps.
+6. cost optimization on databricks done.
+7. how to schedule jobs?
+8. benefits of delta file format
+9. how is time travel can be done via delta file format?
+10. how schema enforcement and schema evolution done on pipeline?
+11. explain data quality checks done on lake house medallion architecture(bronze/silver/gold)
+12. dimensional modeling - star vs snowflake schema - benefits and tradeoffs - when to use which?
+13. optimize, vaccum commands use case
+14. external vs internal tables/
+15. data governance with unity catalog
+16. ci/cd with databricks - git repo(azure devops with databricks assest bundles) - explain
+17. pii data - column and row level masking - how to implement
+18. benefits and demerits of lakehouse medallion architecture
+19. architecture of databricks and why to use databricks?
+20. how to link databricks with adls gen2 - adb connector with external creds
+21. metastore, schema, catalogs - priveliges
+22. how to compute costs on azure databricks without looking up on azure portal - system views under information schema
+23. when do use scd type 1 and type 2
+24. open delta sharing - to transfer data from databricks to outside
+25. little bit of adf and azure purview.
+26. types of trigger in workflow jobs
+27. cluster policies
+28. unit testing implemented - Pytest
+29. Python libraries used - e.g. - Black, SQL Fluff
+30. Streaming concepts - watermarking, window function, foreachBatch, tumbling vs sliding window
+31. how do you scale your pipeline?
+32. cluster configurations used and how do you implement security and governance on resources -- using unity catalog
